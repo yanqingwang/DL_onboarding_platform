@@ -1,0 +1,87 @@
+{
+    "common": {
+        "appName": "การสรรหาบุคลากรแรงงาน",
+        "loading": "กำลังโหลด...",
+        "error": "ข้อผิดพลาด",
+        "success": "สำเร็จ",
+        "cancel": "ยกเลิก",
+        "confirm": "ยืนยัน",
+        "save": "บันทึก",
+        "edit": "แก้ไข",
+        "delete": "ลบ",
+        "back": "กลับ",
+        "next": "ถัดไป",
+        "previous": "ก่อนหน้า",
+        "submit": "ส่ง",
+        "search": "ค้นหา",
+        "filter": "กรอง",
+        "clear": "ล้าง"
+    },
+    "nav": {
+        "home": "หน้าหลัก",
+        "dashboard": "แดชบอร์ด",
+        "profile": "โปรไฟล์",
+        "settings": "การตั้งค่า",
+        "logout": "ออกจากระบบ",
+        "login": "เข้าสู่ระบบ",
+        "register": "ลงทะเบียน"
+    },
+    "auth": {
+        "loginTitle": "เข้าสู่ระบบ",
+        "registerTitle": "สร้างบัญชี",
+        "email": "อีเมล",
+        "password": "รหัสผ่าน",
+        "confirmPassword": "ยืนยันรหัสผ่าน",
+        "forgotPassword": "ลืมรหัสผ่าน?",
+        "noAccount": "ยังไม่มีบัญชี?",
+        "hasAccount": "มีบัญชีอยู่แล้ว?",
+        "loginSuccess": "เข้าสู่ระบบสำเร็จ",
+        "registerSuccess": "ลงทะเบียนสำเร็จ"
+    },
+    "dashboard": {
+        "welcome": "ยินดีต้อนรับ",
+        "overview": "ภาพรวม",
+        "statistics": "สถิติ",
+        "recentActivity": "กิจกรรมล่าสุด",
+        "pendingTasks": "งานที่รอดำเนินการ"
+    },
+    "onboarding": {
+        "title": "การสรรหาพนักงาน",
+        "step": "ขั้นตอน",
+        "of": "ของ",
+        "personalInfo": "ข้อมูลส่วนตัว",
+        "contactInfo": "ข้อมูลติดต่อ",
+        "workExperience": "ประสบการณ์การทำงาน",
+        "documents": "เอกสาร",
+        "review": "ตรวจสอบและส่ง",
+        "complete": "การสรรหาเสร็จสิ้น"
+    },
+    "form": {
+        "firstName": "ชื่อ",
+        "lastName": "นามสกุล",
+        "phone": "หมายเลขโทรศัพท์",
+        "address": "ที่อยู่",
+        "city": "เมือง",
+        "country": "ประเทศ",
+        "postalCode": "รหัสไปรษณีย์",
+        "dateOfBirth": "วันเกิด",
+        "nationality": "สัญชาติ",
+        "required": "กรุณากรอกข้อมูลนี้",
+        "invalidEmail": "รูปแบบอีเมลไม่ถูกต้อง",
+        "invalidPhone": "รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง"
+    },
+    "language": {
+        "select": "เลือกภาษา",
+        "current": "ภาษาปัจจุบัน",
+        "change": "เปลี่ยนภาษา"
+    },
+    "validation": {
+        "required": "กรุณากรอกข้อมูลนี้",
+        "minLength": "ต้องมีอย่างน้อย {{count}} ตัวอักษร",
+        "maxLength": "มีได้ไม่เกิน {{count}} ตัวอักษร",
+        "email": "รูปแบบอีเมลไม่ถูกต้อง",
+        "phone": "รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง",
+        "date": "รูปแบบวันที่ไม่ถูกต้อง",
+        "match": "ข้อมูลไม่ตรงกัน"
+    }
+}

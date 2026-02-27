@@ -1,0 +1,87 @@
+{
+    "common": {
+        "appName": "Perekrutan Buruh",
+        "loading": "Memuatkan...",
+        "error": "Ralat",
+        "success": "Berjaya",
+        "cancel": "Batal",
+        "confirm": "Sahkan",
+        "save": "Simpan",
+        "edit": "Edit",
+        "delete": "Padam",
+        "back": "Kembali",
+        "next": "Seterusnya",
+        "previous": "Sebelum",
+        "submit": "Hantar",
+        "search": "Cari",
+        "filter": "Tapis",
+        "clear": "Kosongkan"
+    },
+    "nav": {
+        "home": "Laman Utama",
+        "dashboard": "Papan Pemuka",
+        "profile": "Profil",
+        "settings": "Tetapan",
+        "logout": "Log Keluar",
+        "login": "Log Masuk",
+        "register": "Daftar"
+    },
+    "auth": {
+        "loginTitle": "Log masuk ke akaun anda",
+        "registerTitle": "Cipta akaun",
+        "email": "E-mel",
+        "password": "Kata Laluan",
+        "confirmPassword": "Sahkan Kata Laluan",
+        "forgotPassword": "Lupa kata laluan?",
+        "noAccount": "Tiada akaun?",
+        "hasAccount": "Mempunyai akaun?",
+        "loginSuccess": "Log masuk berjaya",
+        "registerSuccess": "Pendaftaran berjaya"
+    },
+    "dashboard": {
+        "welcome": "Selamat Datang",
+        "overview": "Gambaran Keseluruhan",
+        "statistics": "Statistik",
+        "recentActivity": "Aktiviti Terkini",
+        "pendingTasks": "Tugasan Tertunda"
+    },
+    "onboarding": {
+        "title": "Perekrutan Pekerja",
+        "step": "Langkah",
+        "of": "daripada",
+        "personalInfo": "Maklumat Peribadi",
+        "contactInfo": "Maklumat Hubungi",
+        "workExperience": "Pengalaman Kerja",
+        "documents": "Dokumen",
+        "review": "Semak & Hantar",
+        "complete": "Perekrutan Selesai"
+    },
+    "form": {
+        "firstName": "Nama Pertama",
+        "lastName": "Nama Akhir",
+        "phone": "Nombor Telefon",
+        "address": "Alamat",
+        "city": "Bandar",
+        "country": "Negara",
+        "postalCode": "Poskod",
+        "dateOfBirth": "Tarikh Lahir",
+        "nationality": "Warga Negara",
+        "required": "Ruangan ini wajib diisi",
+        "invalidEmail": "Alamat e-mel tidak sah",
+        "invalidPhone": "Nombor telefon tidak sah"
+    },
+    "language": {
+        "select": "Pilih Bahasa",
+        "current": "Bahasa Semasa",
+        "change": "Tukar Bahasa"
+    },
+    "validation": {
+        "required": "Ruangan ini wajib diisi",
+        "minLength": "Minimum {{count}} aksara diperlukan",
+        "maxLength": "Maximum {{count}} aksara dibenarkan",
+        "email": "Format e-mel tidak sah",
+        "phone": "Format nombor telefon tidak sah",
+        "date": "Format tarikh tidak sah",
+        "match": "Ruangan tidak sepadan"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "common": {
+        "appName": "Blue-Collar Onboarding",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "submit": "Submit",
+        "search": "Search",
+        "filter": "Filter",
+        "clear": "Clear"
+    },
+    "nav": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "profile": "Profile",
+        "settings": "Settings",
+        "logout": "Logout",
+        "login": "Login",
+        "register": "Register"
+    },
+    "auth": {
+        "loginTitle": "Login to your account",
+        "registerTitle": "Create an account",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "forgotPassword": "Forgot password?",
+        "noAccount": "Don't have an account?",
+        "hasAccount": "Already have an account?",
+        "loginSuccess": "Login successful",
+        "registerSuccess": "Registration successful"
+    },
+    "dashboard": {
+        "welcome": "Welcome",
+        "overview": "Overview",
+        "statistics": "Statistics",
+        "recentActivity": "Recent Activity",
+        "pendingTasks": "Pending Tasks"
+    },
+    "onboarding": {
+        "title": "Worker Onboarding",
+        "step": "Step",
+        "of": "of",
+        "personalInfo": "Personal Information",
+        "contactInfo": "Contact Information",
+        "workExperience": "Work Experience",
+        "documents": "Documents",
+        "review": "Review & Submit",
+        "complete": "Onboarding Complete"
+    },
+    "form": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phone": "Phone Number",
+        "address": "Address",
+        "city": "City",
+        "country": "Country",
+        "postalCode": "Postal Code",
+        "dateOfBirth": "Date of Birth",
+        "nationality": "Nationality",
+        "required": "This field is required",
+        "invalidEmail": "Invalid email address",
+        "invalidPhone": "Invalid phone number"
+    },
+    "language": {
+        "select": "Select Language",
+        "current": "Current Language",
+        "change": "Change Language"
+    },
+    "validation": {
+        "required": "This field is required",
+        "minLength": "Minimum {{count}} characters required",
+        "maxLength": "Maximum {{count}} characters allowed",
+        "email": "Invalid email format",
+        "phone": "Invalid phone number format",
+        "date": "Invalid date format",
+        "match": "Fields do not match"
+    }
+}

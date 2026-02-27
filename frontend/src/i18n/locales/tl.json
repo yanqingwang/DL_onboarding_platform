@@ -1,0 +1,87 @@
+{
+    "common": {
+        "appName": "Pagre-recruit sa Blue-Collar",
+        "loading": "Naglo-load...",
+        "error": "Error",
+        "success": "Matagumpay",
+        "cancel": "Kanselahin",
+        "confirm": "Kumpirmahin",
+        "save": "I-save",
+        "edit": "I-edit",
+        "delete": "I-delete",
+        "back": "Bumalik",
+        "next": "Susunod",
+        "previous": "Nakaraang",
+        "submit": "Ipasa",
+        "search": "Hanapin",
+        "filter": "I-filter",
+        "clear": "I-clear"
+    },
+    "nav": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "profile": "Profile",
+        "settings": "Settings",
+        "logout": "Mag-logout",
+        "login": "Mag-login",
+        "register": "Mag-register"
+    },
+    "auth": {
+        "loginTitle": "Mag-login sa iyong account",
+        "registerTitle": "Gumawa ng account",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Kumpirmahin ang Password",
+        "forgotPassword": "Nakalimutan ang password?",
+        "noAccount": "Wala pang account?",
+        "hasAccount": "May account na?",
+        "loginSuccess": "Matagumpay ang pag-login",
+        "registerSuccess": "Matagumpay ang pag-register"
+    },
+    "dashboard": {
+        "welcome": "Maligayang pagdating",
+        "overview": "Pangkalahatang view",
+        "statistics": "Estadistika",
+        "recentActivity": "Kamakailang aktibidad",
+        "pendingTasks": "Mga pending na gawain"
+    },
+    "onboarding": {
+        "title": "Pagre-recruit ng Manggagawa",
+        "step": "Hakbang",
+        "of": "ng",
+        "personalInfo": "Personal na Impormasyon",
+        "contactInfo": "Impormasyon sa pakikipag-ugnayan",
+        "workExperience": "Karanasan satrabaho",
+        "documents": "Mga Dokumento",
+        "review": "Suriin at Ipasa",
+        "complete": "Tapos na ang Onboarding"
+    },
+    "form": {
+        "firstName": "Pangalan",
+        "lastName": "Apelyido",
+        "phone": "Numero ng telepono",
+        "address": "Address",
+        "city": "Lungsod",
+        "country": "Bansa",
+        "postalCode": "Postal code",
+        "dateOfBirth": "Petsa ng kapanganakan",
+        "nationality": "Pagkamamamayan",
+        "required": "Kailangan ang field na ito",
+        "invalidEmail": "Invalid na email address",
+        "invalidPhone": "Invalid na numero ng telepono"
+    },
+    "language": {
+        "select": "Pumili ng Wika",
+        "current": "Kasalukuyang Wika",
+        "change": "Palitan ang Wika"
+    },
+    "validation": {
+        "required": "Kailangan ang field na ito",
+        "minLength": "Kailangan ng minimum {{count}} character",
+        "maxLength": "Maximum {{count}} character lang ang pwede",
+        "email": "Invalid na format ng email",
+        "phone": "Invalid na format ng numero ng telepono",
+        "date": "Invalid na format ng petsa",
+        "match": "Hindi tumutugma ang mga field"
+    }
+}
