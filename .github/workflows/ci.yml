@@ -1,0 +1,202 @@
+# CI/CD Pipeline for Blue-Collar Onboarding Platform
+# Triggers on push and pull requests to main branch
+
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  install:
+    name: Install Dependencies
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install root dependencies
+        run: npm ci
+      
+      - name: Install workspace dependencies
+        run: npm install --workspaces
+
+  lint:
+    name: Lint Code
+    runs-on: ubuntu-latest
+    needs: install
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install workspace dependencies
+        run: npm install --workspaces
+      
+      - name: Lint root
+        run: npm run lint
+      
+      - name: Lint backend
+        run: npm run lint --workspace=backend
+      
+      - name: Lint frontend
+        run: npm run lint --workspace=frontend
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: install
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install workspace dependencies
+        run: npm install --workspaces
+      
+      # Placeholder for test execution
+      # TODO: Add test framework and write tests
+      - name: Run tests (placeholder)
+        run: echo "No tests configured yet"
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install workspace dependencies
+        run: npm install --workspaces
+      
+      - name: Build backend
+        run: npm run build:backend
+        env:
+          NODE_ENV: production
+      
+      - name: Build frontend
+        run: npm run build:frontend
+        env:
+          NODE_ENV: production
+      
+      - name: Upload backend artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-dist
+          path: backend/dist
+      
+      - name: Upload frontend artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist
+
+  # =============================================================================
+  # DEPLOYMENT CONFIGURATION (Future/Optional)
+  # Uncomment and configure when ready for deployment
+  # =============================================================================
+  
+  # deploy-staging:
+  #   name: Deploy to Staging
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   if: github.ref == 'refs/heads/develop'
+  #   environment: staging
+  #   
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
+  #     
+  #     - name: Download backend artifact
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: backend-dist
+  #         path: backend/dist
+  #     
+  #     - name: Download frontend artifact
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: frontend-dist
+  #         path: frontend/dist
+  #     
+  #     - name: Deploy to staging server
+  #       env:
+  #         SSH_HOST: ${{ secrets.STAGING_HOST }}
+  #         SSH_USERNAME: ${{ secrets.STAGING_USER }}
+  #         SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
+  #       run: |
+  #         # Add deployment script here
+  #         echo "Deploying to staging..."
+  
+  # deploy-production:
+  #   name: Deploy to Production
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+  #   environment: production
+  #   
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
+  #     
+  #     - name: Download backend artifact
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: backend-dist
+  #         path: backend/dist
+  #     
+  #     - name: Download frontend artifact
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: frontend-dist
+  #         path: frontend/dist
+  #     
+  #     - name: Deploy to production
+  #       env:
+  #         SSH_HOST: ${{ secrets.PRODUCTION_HOST }}
+  #         SSH_USERNAME: ${{ secrets.PRODUCTION_USER }}
+  #         SSH_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+  #       run: |
+  #         # Add deployment script here
+  #         echo "Deploying to production..."
