@@ -16,14 +16,12 @@ module.exports = {
   },
 
   production: {
-    client: 'pg',
-    connection: process.env.DATABASE_URL,
-    pool: {
-      min: 2,
-      max: 10,
+    client: 'sqlite3',
+    connection: {
+      filename: path.join(__dirname, 'data', 'prod.sqlite3'),
     },
+    useNullAsDefault: true,
     migrations: {
-      tableName: 'knex_migrations',
       directory: path.join(__dirname, 'migrations'),
     },
     seeds: {
